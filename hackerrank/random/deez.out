@@ -1,0 +1,45 @@
+going in at: 0 0
+dfs again at: 0 0
+dfs again at: 0 1
+dfs again at: 0 0
+dfs again at: 0 1
+dfs again at: 1 1
+dfs again at: 0 0
+dfs again at: 0 1
+dfs again at: 1 1
+dfs again at: 1 1
+1 1 0 0 
+0 1 0 0 
+0 0 0 0 
+0 0 0 0 
+----------------------
+going in at: 1 2
+dfs again at: 0 0
+dfs again at: 0 1
+dfs again at: 1 1
+1 1 0 0 
+0 1 2 0 
+0 0 0 0 
+0 0 0 0 
+----------------------
+going in at: 2 2
+dfs again at: 0 0
+dfs again at: 0 1
+dfs again at: 1 1
+1 1 0 0 
+0 1 2 0 
+0 0 3 0 
+0 0 0 0 
+----------------------
+going in at: 3 0
+dfs again at: 0 0
+dfs again at: 0 1
+1 1 0 0 
+0 1 2 0 
+0 0 3 0 
+4 0 0 0 
+----------------------
+1 1 0 0 
+0 1 2 0 
+0 0 3 0 
+4 0 0 0 
