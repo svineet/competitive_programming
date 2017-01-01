@@ -38,7 +38,7 @@ int main() {
                         /*cout << A[j-1] << " " << B[i-1];
                         cout << " matches ";
                         cout << A[w] << " " << B[k] << endl;*/
-                        if (dp[i][j] < 1+dp[k+1][w+1]) {
+                        if (dp[i][j] <= 1+dp[k+1][w+1]) {
                             dp[i][j] = 1+dp[k+1][w+1];
                             parent[i][j] = make_pair(k+1, w+1);
                         }

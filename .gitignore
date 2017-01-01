@@ -1,2 +1,4 @@
 *.o
 *.out
+iarcs_judge/test_data_iarcs
+*.in

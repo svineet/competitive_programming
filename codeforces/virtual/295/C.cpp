@@ -21,12 +21,21 @@ int main() {
             ft++;
     }
 
-    long long fact[n+1];
-    fact[1] = 1;
-    for (int i=2; i<=n; i++) {
-        fact[i] = i*fact[i-1];
-        fact[i] %= MOD;
+    int array[4] = {fa, fg, fc, ft};
+    sort (array, array+4, greater<int>());
+    int mx = array[0];
+    int mxnum = 1;
+    for (int i=1; i<4; i++) {
+        if (array[i] == mx) mxnum++;
     }
+
+    long long cnt = 1;
+    for (int i=1; i<=n; i++) {
+        cnt *= mxnum;
+        cnt %= MOD;
+    }
+
+    cout << cnt << endl;
 
     return 0;
 }
