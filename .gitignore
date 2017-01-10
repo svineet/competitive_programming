@@ -1,2 +1,7 @@
 *.o
 *.out
+<<<<<<< HEAD
+=======
+iarcs_judge/test_data_iarcs
+*.in
+>>>>>>> d40bd14241076b3fad94e2485173397909d3bcf4

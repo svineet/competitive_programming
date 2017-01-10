@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+<<<<<<< HEAD
 	freopen("sample.in", "r", stdin);
 
 	int n; cin >> n;
@@ -27,5 +28,7 @@ int main() {
 	cout << endl;
 	
 	
+=======
+>>>>>>> d40bd14241076b3fad94e2485173397909d3bcf4
 	return 0;
 }
