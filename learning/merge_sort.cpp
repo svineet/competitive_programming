@@ -35,10 +35,14 @@ void MergeSort(int origin[], int left, int right, int destination[]) {
 }
 
 int main() {
-    int array1[5] = {5, 4, 3, 2, 1};
-    int array2[5];
-    MergeSort(array1, 0, 5, array2); 
+    const int n = 20000;
 
-    for (int i=0; i<5; i++) printf("%d ", array2[i]);
+    int array1[n];
+    for (int i=0; i<n; i++) array1[i] = n-i-1;
+
+    int array2[n];
+    MergeSort(array1, 0, n-1, array2); 
+
+    for (int i=0; i<n; i++) printf("%d ", array2[i]);
     printf("\n");
 }
