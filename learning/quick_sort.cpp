@@ -4,18 +4,29 @@ using namespace std;
 int partition(int A[], int left, int right) {
     // Partition A into three parts
     // with A[left] as pivot
-    
-    int piv = A[left];
-    int i = left+1;
-    for (int j=left+1; j<=right; j++) {
-        if (A[j] < piv) {
-            swap(A[i], A[j]);
+
+    int i = left-1;
+    for (int j=left; j<right; j++) {
+        // A[i+1..j] is > A[right]
+
+        if (A[j] <= A[right]) {
+            // A[j] <= pivot, we increment i and swap
+            // Belongs in left..i area
             i++;
+            swap(A[i], A[j]);
+
+            // After swap, element A[i] (abhi wala i)
+            // to jth pos, so that j is extended too
+            // thus j always increases
+        } else {
+            // A[j] > pivot, we just extend j anyway
+            // Belongs in i+1..j area
+            // do nothing
         }
     }
 
-    swap(A[left], A[i-1]);
-    return i-1;
+    swap(A[i+1], A[right]);
+    return i;
 }
 
 void quick_sort(int A[], int left, int right) {
